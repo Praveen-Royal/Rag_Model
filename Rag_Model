@@ -15,12 +15,12 @@ import time
 load_dotenv()
 
 # Set up Groq API key
-#groq_api_key = os.getenv("GROQ_API_KEY")
+#groq_api_key = os.getenv("WEBSITE_API")
 
-groq_api_key = st.secrets["GROQ_API_KEY"]
+groq_api_key = st.secrets["WEBSITE_API"]
 
 st.set_page_config(page_title="Dynamic RAG with Groq", layout="wide")
-st.image("PragyanAI_Transperent.png")
+#st.image("PragyanAI_Transperent.png")
 st.title("Dynamic RAG with Groq, FAISS, and Llama3")
 
 # Initialize session state for vector store and chat history
